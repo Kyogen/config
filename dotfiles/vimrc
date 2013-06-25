@@ -76,5 +76,5 @@ set mouse=a         " Enable the use of the mouse.
 filetype plugin indent on
 syntax on
 
-"set spell
+set spell
 set spelllang=en,de
