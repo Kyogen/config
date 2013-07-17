@@ -9,6 +9,7 @@ VBOX_USB=usbfs
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias l='ls -al'
+alias vi=vim
 
 #PS1='[\u@\h \W]\$ '
 
@@ -16,6 +17,13 @@ export EDITOR="vim"
 
 PATH="$PATH:$HOME/bin"
 export PATH
+
+if [ -n "$DISPLAY" ]; then
+    BROWSER=firefox
+else
+    BROWSER=links
+fi
+export BROWSER
 
 man() {
 	env \
