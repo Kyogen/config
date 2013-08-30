@@ -72,9 +72,12 @@ set background=dark " When set to "dark", Vim will try to use colors that look
                     " Any other value is illegal.
  
 set mouse=a         " Enable the use of the mouse.
+
  
 filetype plugin indent on
 syntax on
 
 set spell
 set spelllang=en,de
+
+let c_space_errors = 1 " Show whitespace errors
