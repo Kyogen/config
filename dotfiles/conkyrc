@@ -41,10 +41,12 @@ total_run_times 0
 own_window yes
 
 # Out of control of window manager
-own_window_type override
+own_window_type conky
 
 # Transparent window
 own_window_transparent yes
+
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
 # Use double buffering (reduces flicker, may not work for everyone)
 double_buffer yes
