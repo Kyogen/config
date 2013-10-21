@@ -9,8 +9,9 @@ dotfiles directory has to emulate the intended installation directory (~/ for mo
 
 So, to install the files to the home directory, use "stow" like this:
 
-$ cd ~/dotfiles
-$ stow bash
-$ stow vim
+    $ cd ~/dotfiles
+    $ stow bash
+    $ stow vim
+
 etc
 
