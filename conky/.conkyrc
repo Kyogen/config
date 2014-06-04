@@ -52,10 +52,10 @@ own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
 
 # Minimum size of text area
-minimum_size 10 5
+minimum_size 10 10
 
 # Maximum size of text area
-maximum_width 250
+maximum_width 400
 
 # Draw shades?
 draw_shades yes
@@ -372,9 +372,11 @@ ${top name 1}${alignr 5}${top pid 1}  ${top cpu 1}
 ${top name 2}${alignr 5}${top pid 2}  ${top cpu 2}
 ${top name 3}${alignr 5}${top pid 3}  ${top cpu 3}
 ${top name 4}${alignr 5}${top pid 4}  ${top cpu 4}
+${top name 5}${alignr 5}${top pid 5}  ${top cpu 5}
 
 ${color slate grey}Highest MEM ${hr 2}${color grey}
 ${top_mem name 1}${alignr 5}${top_mem pid 1}  ${top_mem mem 1}
 ${top_mem name 2}${alignr 5}${top_mem pid 2}  ${top_mem mem 2}
 ${top_mem name 3}${alignr 5}${top_mem pid 3}  ${top_mem mem 3}
 ${top_mem name 4}${alignr 5}${top_mem pid 4}  ${top_mem mem 4}
+${top_mem name 5}${alignr 5}${top_mem pid 5}  ${top_mem mem 5}

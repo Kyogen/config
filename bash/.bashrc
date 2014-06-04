@@ -1,8 +1,8 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
-complete -cf sudo
-complete -cf man
+#complete -cf sudo
+#complete -cf man
 
 VBOX_USB=usbfs
 
@@ -12,11 +12,15 @@ alias l='ls -al'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 alias vi=vim
 
-#PS1='[\u@\h \W]\$ '
+source ~/.git-prompt.sh
+ 
+sq_color="\[\033[0;34m\]"
+
+PS1="$sq_color\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[01;37m\]\342\234\227$sq_color]\342\224\200\")[\[\033[01;37m\]\t$sq_color]\342\224\200[\[\033[01;37m\]\u@\h$sq_color]\n\342\224\224\342\224\200\342\224\200>\[\033[01;37m\] \w$(__git_ps1 "(%s)") $sq_color\$ \[\033[01;37m\]>>\\[\\033[0m\\] "
 
 export EDITOR="vim"
 
-PATH="$PATH:$HOME/bin"
+PATH="$PATH:$HOME/bin:$HOME/.gem/ruby/2.0.0/bin"
 export PATH
 
 if [ -n "$DISPLAY" ]; then

@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/thomas/Uni/Diplom/code/Programme/IR_nanoplus'
-let g:netrw_dirhist_2='/boot/grub-legacy'
-let g:netrw_dirhist_3='/home/thomas/src/Uni/PGM-Handling'
-let g:netrw_dirhist_4='/home/thomas/.config/gtk-3.0'
-let g:netrw_dirhist_5='/home/thomas/src/Uni/Mehfarbeninterferometer/server_client/.git'
-let g:netrw_dirhist_6='/home/thomas/Notebooks/Archlinux/Merkliste_Programme'
-let g:netrw_dirhist_7='/home/thomas/src/Uni/Mehfarbeninterferometer/wavemaster'
